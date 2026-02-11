@@ -22,12 +22,12 @@ EOT
     license_key                     = string
     name                            = string
     spring_cloud_service_id         = string
-    agent_enabled                   = optional(bool, true)
+    agent_enabled                   = optional(bool) # Default: true
     app_server_port                 = optional(number)
     audit_mode_enabled              = optional(bool)
     auto_app_naming_enabled         = optional(bool)
-    auto_transaction_naming_enabled = optional(bool, true)
-    custom_tracing_enabled          = optional(bool, true)
+    auto_transaction_naming_enabled = optional(bool) # Default: true
+    custom_tracing_enabled          = optional(bool) # Default: true
     globally_enabled                = optional(bool)
     labels                          = optional(map(string))
   }))
